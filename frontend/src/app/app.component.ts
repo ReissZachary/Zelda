@@ -16,21 +16,16 @@ export class AppComponent implements OnInit  {
 
   navItems: MenuItem[] = [
     {
-       label: 'Scheduler',
-       items: [
-          {
-             label: 'Schedule Time',
-             routerLink: '/scheduler',
-          },
-          {
-             label: 'Shift request',
-             routerLink: '/shiftRequest',
-          },
-          {
-             label: 'Manager',
-             routerLink: '/managerTools',
-          },
-       ],
+        label: 'Schedule Time',
+        routerLink: '/scheduler',
+    },
+    {
+        label: 'Shift request',
+        routerLink: '/shiftRequest',
+    },
+    {
+        label: 'Manager',
+        routerLink: '/managerTools',
     },
  ];
 ;

@@ -1,26 +1,8 @@
-<div class="header shadow-1 top-0 sticky z-1 bg-component-color flex">
-   <div class="flex flex-column gap-1 ml-3">
-      <div
-         (click)="navigateTo('/')"
-         class="font-bold text-2xl lg:block xl:block hidden cursor-pointer"
-      >
-         {{ appTitle }}<br />
-   </div>
-   <div>
-      <button
-         pButton
-         class="ml-1 text-gray-500 bg-transparent border-none"
-         icon="pi pi-bars"
-         (click)="menu.toggle($event)"
-      ></button>
-      <p-menu
-         #menu
-         appendTo="body"
-         [popup]="true"
-         class="col-2"
-         [model]="navItems"
-      ></p-menu>
-   </div>
-</div>
+
+<p-menubar [model]="navItems">
+  <ng-template pTemplate="start">
+      <img src="../assets/logo.jpg" height="40" class="mr-2" />
+  </ng-template>
+</p-menubar><div class="header shadow-1 top-0 sticky z-1 bg-component-color flex">
 <app-splash-screen></app-splash-screen>
 <router-outlet></router-outlet>
