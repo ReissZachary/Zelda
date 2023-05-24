@@ -2,3 +2,11 @@
 body {
     font-family: var(--font-family);
 }
+
+#date-col{
+    background-color: #0D6986;
+}
+
+#shift-row{
+    background-color: #DBA507;
+}
