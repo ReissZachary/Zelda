@@ -1,28 +1,468 @@
-<main class="grid">
+<!-- <main class="grid">
     <ng-container>
-        <div class="col-offset-1 col-10" id="html-content">
+        <div class="col-12" id="html-content">
             <div class="grid">
                 <h2 class="col-12 font-bold text-center">Schedule</h2>
-                <p-card class="col-12">
-                    <div class="grid">
-                        <div class="col-1"></div>
-                        <div class="col" id="date-col">1</div>
-                        <div class="col" id="date-col">1</div>
-                        <div class="col" id="date-col">1</div>
-                        <div class="col" id="date-col">1</div>
-                        <div class="col" id="date-col">1</div>
-                        <div class="col" id="date-col">1</div>
-                        <div class="col" id="date-col">1</div>
-                        <div class="col" id="date-col">1</div>
-                        <div class="col" id="date-col">1</div>
-                        <div class="col" id="date-col">1</div>
-                        <div class="col" id="date-col">1</div>
-                        <div class="col" id="date-col">1</div>
+                <p-card class="col-12">                    
+                    <div class="grid" style="overflow: auto;">
+                        <div class="col-3"></div>
+                        <div class="col-9">
+                            <div class="grid">
+                                <div class="col-2"  id="date-col">
+                                    date
+                                </div>
+                                <div class="col-2" id="date-col">
+                                    date
+                                </div>
+                                <div class="col-2"  id="date-col">
+                                    date
+                                </div>
+                                <div class="col-2" id="date-col">
+                                    date
+                                </div>
+                                <div class="col-2"  id="date-col">
+                                    date
+                                </div>
+                                <div class="col-2" id="date-col">
+                                    date
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3" id="date-col">
+                            Shift
+                        </div>
                     </div>
                 </p-card>                
             </div>
         </div>
     </ng-container>
- </main>
+ </main> -->
  
  
+<div>
+    <div>
+        <h2 class="col-12 font-bold text-center">Schedule</h2>
+    </div>
+
+    <p-card>    
+        <div class="overflow-auto">
+            <div style="min-width: 1700px">
+                <div class="flex gap-3 mb-3">
+                    <div class="flex-shrink-0 w-9rem"></div>
+                    <div class="flex-1 bg-bluegray-500 text-white font-bold text-center p-3 text-xl border-round">DATE1</div>
+                    <div class="flex-1 bg-bluegray-500 text-white font-bold text-center p-3 text-xl border-round">DATE2</div>
+                    <div class="flex-1 bg-bluegray-500 text-white font-bold text-center p-3 text-xl border-round">DATE3</div>
+                    <div class="flex-1 bg-bluegray-500 text-white font-bold text-center p-3 text-xl border-round">DATE4</div>
+                    <div class="flex-1 bg-bluegray-500 text-white font-bold text-center p-3 text-xl border-round">DATE5</div>
+                    <div class="flex-1 bg-bluegray-500 text-white font-bold text-center p-3 text-xl border-round">DATE6</div>
+                    <div class="flex-1 bg-bluegray-500 text-white font-bold text-center p-3 text-xl border-round">DATE7</div>
+                    <!-- <div class="flex-1 bg-bluegray-500 text-white font-bold text-center p-3 text-xl border-round">DATE8</div>
+                    <div class="flex-1 bg-bluegray-500 text-white font-bold text-center p-3 text-xl border-round">DATE9</div>
+                    <div class="flex-1 bg-bluegray-500 text-white font-bold text-center p-3 text-xl border-round">DATE10</div>
+                    <div class="flex-1 bg-bluegray-500 text-white font-bold text-center p-3 text-xl border-round">DATE11</div>
+                    <div class="flex-1 bg-bluegray-500 text-white font-bold text-center p-3 text-xl border-round">DATE12</div>
+                    <div class="flex-1 bg-bluegray-500 text-white font-bold text-center p-3 text-xl border-round">DATE13</div>
+                    <div class="flex-1 bg-bluegray-500 text-white font-bold text-center p-3 text-xl border-round">DATE14</div> -->
+                </div>
+                <div class="flex flex-column gap-3">
+                    <div class="flex gap-3 surface-border pb-3">
+                        <div class="flex-shrink-0 p-3 text-white border-round font-bold text-lg flex align-items-center justify-content-center w-9rem" style="background-color: #0C8558;">
+                            8:30AM - 12:00PM
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Harry Potter</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Joe Montana</h2>                                
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Woody</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Woody</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Harry Potter</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Joe Montana</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Woody</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Woody</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Harry Potter</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Joe Montana</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 border-bottom-1 surface-border pb-3">
+                        <div class="flex-shrink-0 p-3 text-white border-round font-bold text-lg flex align-items-center justify-content-center w-9rem" style="background-color: #580c85;">
+                            Backup
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Joe Montana</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div><div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Joe Montana</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                    </div><div class="flex gap-3 surface-border pb-3">
+                        <div class="flex-shrink-0 p-3 text-white border-round font-bold text-lg flex align-items-center justify-content-center w-9rem" style="background-color: #0C8558;">
+                            12:00PM - 3:00PM
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Harry Potter</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Joe Montana</h2>                                
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Woody</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Woody</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Harry Potter</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Joe Montana</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Woody</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Woody</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Harry Potter</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Joe Montana</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 border-bottom-1 surface-border pb-3">
+                        <div class="flex-shrink-0 p-3 text-white border-round font-bold text-lg flex align-items-center justify-content-center w-9rem" style="background-color: #580c85;">
+                            Backup
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Joe Montana</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div><div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Joe Montana</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                    </div><div class="flex gap-3 surface-border pb-3">
+                        <div class="flex-shrink-0 p-3 text-white border-round font-bold text-lg flex align-items-center justify-content-center w-9rem" style="background-color: #0C8558;">
+                            3:00PM - 6:00PM
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Harry Potter</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Joe Montana</h2>                                
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Woody</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Woody</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Harry Potter</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Joe Montana</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Woody</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Woody</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Harry Potter</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Joe Montana</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 border-bottom-1 surface-border pb-3">
+                        <div class="flex-shrink-0 p-3 text-white border-round font-bold text-lg flex align-items-center justify-content-center w-9rem" style="background-color: #580c85;">
+                            Backup
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Joe Montana</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div><div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Joe Montana</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                    </div><div class="flex gap-3 surface-border pb-3">
+                        <div class="flex-shrink-0 p-3 text-white border-round font-bold text-lg flex align-items-center justify-content-center w-9rem" style="background-color: #0C8558;">
+                            6:00PM - 10:00PM
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Harry Potter</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Joe Montana</h2>                                
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Woody</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Woody</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Harry Potter</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Joe Montana</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Woody</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Woody</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Harry Potter</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Joe Montana</h2>
+                            </div>
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #0C8558">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-3 border-bottom-1 surface-border pb-3">
+                        <div class="flex-shrink-0 p-3 text-white border-round font-bold text-lg flex align-items-center justify-content-center w-9rem" style="background-color: #580c85;">
+                            Backup
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Joe Montana</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div><div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Joe Montana</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                        <div class="flex-1 flex gap-3 flex-column">
+                            <div class="p-3 surface-card border-round " style="border-left: 6px solid; border-color: #580c85">
+                                <h2 class="text-lg font-bold mt-0 mb-2">Kanye West</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </p-card>
